@@ -182,7 +182,34 @@ function showResults() {
     const errorsList = document.getElementById('errors-list');
 
     if (currentQuiz.errors.length === 0) {
-        errorsSection.innerHTML = '<div class="alert alert-success"><strong>Perfect!</strong> No mistakes!</div>';
+        errorsSection.innerHTML = `
+            <div class="alert alert-success">
+                <h4 class="alert-heading">🎉 Wow, you did super good. Awesome!</h4>
+                <p class="mb-0"><strong>Perfect!</strong> No mistakes!</p>
+            </div>
+            <div class="card mt-3" style="background-color: #f8f9fa; border: 2px solid #28a745;">
+                <div class="card-body">
+                    <p class="mb-3">
+                        It cost me some time building this, and I'm providing this for free.
+                        If you found this helpful, you can pay me back by:
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a href="https://www.linkedin.com/in/woutersfrederik/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            Connect with me on LinkedIn
+                        </a>
+                        <a href="https://www.buymeacoffee.com/woutersf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-success">
+                            ☕ Buy me a coffee
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
     } else {
         errorsList.innerHTML = '';
 
