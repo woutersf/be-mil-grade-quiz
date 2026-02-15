@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.globalmilitary.net)",
+      "Bash(python3:*)"
+    ]
+  }
+}

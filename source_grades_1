@@ -1,0 +1,352 @@
+<table>
+      <colgroup>
+        <col style="width: 30%;">
+        <col style="width: 10%;">
+        <col style="width: 10%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Rank name</th>
+          <th>Insignia</th>
+          <th>NATO code</th>
+          <th>US Army equivalent</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+
+  <tr>
+    <td>Admiraal / Amiral / Admiral</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-9.png" class="rank-image" height="16" alt="Admiraal / Amiral / Admiral insignia">
+      
+    </td>
+    <td>OF-9</td>
+    <td>General</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Vice-admiraal / Vice-amiral / Vizeadmiral</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-8.png" class="rank-image" height="16" alt="Vice-admiraal / Vice-amiral / Vizeadmiral insignia">
+      
+    </td>
+    <td>OF-8</td>
+    <td>Lieutenant General</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Divisieadmiraal / Amiral de division / Divisionsadmiral</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-7.png" class="rank-image" height="16" alt="Divisieadmiraal / Amiral de division / Divisionsadmiral insignia">
+      
+    </td>
+    <td>OF-7</td>
+    <td>Major General</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Flottieljeadmiraal / Amiral de flottille / Flotillenadmiral</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-6.png" class="rank-image" height="16" alt="Flottieljeadmiraal / Amiral de flottille / Flotillenadmiral insignia">
+      
+    </td>
+    <td>OF-6</td>
+    <td>Brigadier General</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Kapitein-ter-zee / Capitaine de vaisseau / Kapitän zur See</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-5.png" class="rank-image" height="16" alt="Kapitein-ter-zee / Capitaine de vaisseau / Kapitän zur See insignia">
+      
+    </td>
+    <td>OF-5</td>
+    <td>Colonel</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Fregatkapitein / Capitaine de frégate / Fregattenkapitän</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-4.png" class="rank-image" height="16" alt="Fregatkapitein / Capitaine de frégate / Fregattenkapitän insignia">
+      
+    </td>
+    <td>OF-4</td>
+    <td>Lieutenant Colonel</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Korvetkapitein / Capitaine de corvette / Korvettenkapitän</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-3a.png" class="rank-image" height="16" alt="Korvetkapitein / Capitaine de corvette / Korvettenkapitän insignia">
+      
+    </td>
+    <td>OF-3</td>
+    <td>Major / Commandant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Luitenant-ter-zee 1ste klasse / Lieutenant de vaisseau de 1re classe / Linienschiffsleutnant 1. klasse</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-3b.png" class="rank-image" height="16" alt="Luitenant-ter-zee 1ste klasse / Lieutenant de vaisseau de 1re classe / Linienschiffsleutnant 1. klasse insignia">
+      
+    </td>
+    <td>OF-3</td>
+    <td>Major / Commandant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Luitenant-ter-zee / Lieutenant de vaisseau / Linienschiffsleutnant</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-2.png" class="rank-image" height="16" alt="Luitenant-ter-zee / Lieutenant de vaisseau / Linienschiffsleutnant insignia">
+      
+    </td>
+    <td>OF-2</td>
+    <td>Captain / 1st Lieutenant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Vaandrig-ter-zee / Enseigne de vaisseau / Seefahnrich</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-1a.png" class="rank-image" height="16" alt="Vaandrig-ter-zee / Enseigne de vaisseau / Seefahnrich insignia">
+      
+    </td>
+    <td>OF-1</td>
+    <td>Lieutenant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Vaandrig-ter-zee 2de klasse / Enseigne de vaisseau de 2e classe / Seefahnrich 2. klasse</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-1b.png" class="rank-image" height="16" alt="Vaandrig-ter-zee 2de klasse / Enseigne de vaisseau de 2e classe / Seefahnrich 2. klasse insignia">
+      
+    </td>
+    <td>OF-1</td>
+    <td>Lieutenant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Aspirant der marine / Aspirant de marine / Aspirant von marine</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-of-d.png" class="rank-image" height="16" alt="Aspirant der marine / Aspirant de marine / Aspirant von marine insignia">
+      
+    </td>
+    <td>OF-D</td>
+    <td>Student Officer</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Oppermeester-Chef / Maître principal-Chef / Chefhauptmeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-9a.png" class="rank-image" height="16" alt="Oppermeester-Chef / Maître principal-Chef / Chefhauptmeister insignia">
+      
+    </td>
+    <td>OR-9</td>
+    <td>Sergeant Major</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Oppermeester / Maître-principal / Hauptmeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-9b.png" class="rank-image" height="16" alt="Oppermeester / Maître-principal / Hauptmeister insignia">
+      
+    </td>
+    <td>OR-9</td>
+    <td>Sergeant Major</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Eerste meesterchef / Premier-maître chef / Erster Chefmeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-8.png" class="rank-image" height="16" alt="Eerste meesterchef / Premier-maître chef / Erster Chefmeister insignia">
+      
+    </td>
+    <td>OR-8</td>
+    <td>1st Sergeant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Eerste meester / Premier maître / Erster Meister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-7.png" class="rank-image" height="16" alt="Eerste meester / Premier maître / Erster Meister insignia">
+      
+    </td>
+    <td>OR-7</td>
+    <td>Sergeant 1st Class</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Meester-chef / Maître-chef / Meister-Chef</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-6a.png" class="rank-image" height="16" alt="Meester-chef / Maître-chef / Meister-Chef insignia">
+      
+    </td>
+    <td>OR-6</td>
+    <td>Staff Sergeant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Meester / Maître / Meister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-6b.png" class="rank-image" height="16" alt="Meester / Maître / Meister insignia">
+      
+    </td>
+    <td>OR-6</td>
+    <td>Staff Sergeant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Tweede meester / Second-maître / Zweiter Meister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-5.png" class="rank-image" height="16" alt="Tweede meester / Second-maître / Zweiter Meister insignia">
+      
+    </td>
+    <td>OR-5</td>
+    <td>Sergeant</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Eerste kwartiermeester-chef / 1er Quartier-maître-chef / 1er Oberquartiermeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-4a.png" class="rank-image" height="16" alt="Eerste kwartiermeester-chef / 1er Quartier-maître-chef / 1er Oberquartiermeister insignia">
+      
+    </td>
+    <td>OR-4</td>
+    <td>Corporal</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Kwartiermeester-chef / Quartier-maître-chef / Oberquartiermeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-4b.png" class="rank-image" height="16" alt="Kwartiermeester-chef / Quartier-maître-chef / Oberquartiermeister insignia">
+      
+    </td>
+    <td>OR-4</td>
+    <td>Corporal</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Kwartiermeester / Quartier maître / Quartiermeister</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-3.png" class="rank-image" height="16" alt="Kwartiermeester / Quartier maître / Quartiermeister insignia">
+      
+    </td>
+    <td>OR-3</td>
+    <td>Private 1st Class</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Eerste matroos / Premier matelot / 1er Matrose</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-2.png" class="rank-image" height="16" alt="Eerste matroos / Premier matelot / 1er Matrose insignia">
+      
+    </td>
+    <td>OR-2</td>
+    <td>Private</td>
+  </tr>
+  
+  
+  
+
+  <tr>
+    <td>Matroos / Matelot / Matrose</td>
+    <td>
+      
+        <img src="https://media.globalmilitary.net/world/images/models/rank/bel-navy-or-1.png" class="rank-image" height="16" alt="Matroos / Matelot / Matrose insignia">
+      
+    </td>
+    <td>OR-1</td>
+    <td>Private</td>
+  </tr>
+  
+      </tbody>
+    </table>

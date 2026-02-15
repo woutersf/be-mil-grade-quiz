@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Belgian Military Ranks Quiz - Learn Belgian Defence Grades | Land, Air & Marine</title>
+    <meta name="description" content="Free interactive quiz to learn Belgian Defence military ranks. Practice identifying insignia from Land Component, Air Component, and Marine Component. Study tool for Belgian military grades.">
+    <meta name="keywords" content="Belgian military ranks, Belgian Defence, military grades Belgium, Land Component, Air Component, Marine Component, military insignia, Belgian army ranks, quiz, study tool">
+    <meta name="author" content="Frederik Wouters">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://grades.mil.be/">
+
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="geo.position" content="50.8503;4.3517">
+    <meta name="ICBM" content="50.8503, 4.3517">
+
+    <!-- Language Alternatives -->
+    <link rel="alternate" hreflang="en" href="https://grades.mil.be/">
+    <link rel="alternate" hreflang="nl" href="https://grades.mil.be/">
+    <link rel="alternate" hreflang="fr" href="https://grades.mil.be/">
+    <link rel="alternate" hreflang="de" href="https://grades.mil.be/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://grades.mil.be/">
+    <meta property="og:title" content="Belgian Military Ranks Quiz - Learn Belgian Defence Grades">
+    <meta property="og:description" content="Free interactive quiz to learn Belgian Defence military ranks. Practice identifying insignia from Land, Air, and Marine Components.">
+    <meta property="og:locale" content="en_BE">
+    <meta property="og:locale:alternate" content="nl_BE">
+    <meta property="og:locale:alternate" content="fr_BE">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://grades.mil.be/">
+    <meta property="twitter:title" content="Belgian Military Ranks Quiz">
+    <meta property="twitter:description" content="Free interactive quiz to learn Belgian Defence military ranks.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Belgian Military Ranks Quiz",
+      "description": "Interactive educational quiz for learning Belgian Defence military ranks across Land, Air, and Marine Components",
+      "url": "https://grades.mil.be/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Frederik Wouters",
+        "email": "woutersf@gmail.com"
+      },
+      "inLanguage": ["en", "nl", "fr"],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Belgian Defence",
+        "sameAs": "https://nl.wikipedia.org/wiki/Defensie_van_België"
+      },
+      "sourceOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Belgian Defence",
+        "location": {
+          "@type": "Country",
+          "name": "Belgium"
+        }
+      }
+    }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container mt-5" role="main">
+        <!-- Start Screen -->
+        <section id="start-screen" class="card" aria-label="Quiz setup">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Belgian Military Ranks Quiz</h1>
+                <h2 class="card-title mb-4">Select Components</h2>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="land-component" checked>
+                    <label class="form-check-label" for="land-component">
+                        Land Component
+                    </label>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="air-component" checked>
+                    <label class="form-check-label" for="air-component">
+                        Air Component
+                    </label>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="marine-component" checked>
+                    <label class="form-check-label" for="marine-component">
+                        Marine Component
+                    </label>
+                </div>
+
+                <h2 class="card-title mb-3">Select Quiz Mode</h2>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary btn-lg" onclick="startQuiz(10)" aria-label="Start quiz with 10 questions">Quiz - 10 Questions</button>
+                    <button class="btn btn-primary btn-lg" onclick="startQuiz(20)" aria-label="Start quiz with 20 questions">Quiz - 20 Questions</button>
+                    <button class="btn btn-primary btn-lg" onclick="startQuiz('all')" aria-label="Start quiz with all ranks">Quiz - All Ranks</button>
+                </div>
+
+                <div id="selection-error" class="alert alert-warning mt-3 d-none" role="alert">
+                    Please select at least one component!
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="d-none" aria-label="Quiz questions">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5 id="question-counter">Question 1/10</h5>
+                        <h5 id="score-counter">Score: 0/0</h5>
+                    </div>
+
+                    <div class="text-center mb-4">
+                        <img id="insignia-image" src="" alt="Military Insignia" class="insignia-img">
+                        <p id="component-label" class="text-muted mt-2"></p>
+                    </div>
+
+                    <div id="answer-options" class="d-grid gap-2">
+                        <!-- Options will be inserted here -->
+                    </div>
+
+                    <div id="feedback" class="alert mt-3 d-none" role="alert" aria-live="polite">
+                        <span id="feedback-text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="d-none" aria-label="Quiz results">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Quiz Complete!</h2>
+
+                    <div class="text-center mb-4">
+                        <h3 id="final-score"></h3>
+                        <p id="score-percentage" class="text-muted"></p>
+                    </div>
+
+                    <div id="errors-section" class="mb-4">
+                        <h4>Review Your Mistakes</h4>
+                        <div id="errors-list">
+                            <!-- Errors will be listed here -->
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg" onclick="restartQuiz()" aria-label="Start a new quiz with the same settings">Try Again</button>
+                        <button class="btn btn-secondary" onclick="backToStart()" aria-label="Return to start screen">Back to Start</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SEO Content Section -->
+    <section class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="h5 mb-3">Practice Belgian Military Ranks with This Interactive Quiz</h2>
+                <p class="text-muted">
+                    Master the Belgian Defence military ranks (graden) with this free interactive study tool.
+                    This quiz helps you learn and recognize the insignia of all Belgian military grades across
+                    the three components: <strong>Land Component</strong> (Landmacht - Army),
+                    <strong>Air Component</strong> (Luchtmacht - Air Force), and
+                    <strong>Marine Component</strong> (Marine - Navy).
+                </p>
+                <p class="text-muted">
+                    Whether you're preparing for military service, studying Belgian Defence structure, or simply
+                    interested in military ranks, this tool provides an effective way to memorize the 69 different
+                    ranks from Soldaat/Matroos (Private/Seaman) to Generaal/Admiraal (General/Admiral). Practice
+                    identifying rank insignia through multiple-choice questions with instant feedback and detailed
+                    error review.
+                </p>
+                <p class="text-muted mb-0">
+                    <strong>Learn more:</strong> Visit the complete
+                    <a href="https://nl.wikipedia.org/wiki/Lijst_van_militaire_rangen_van_de_Belgische_strijdkrachten"
+                       target="_blank"
+                       rel="noopener noreferrer">Belgian Military Ranks overview on Wikipedia</a>
+                    for detailed information about each rank, NATO equivalents, and the history of Belgian Defence ranks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mt-4 mb-4" role="contentinfo">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="h6 mb-3">About This Tool</h3>
+                <p class="text-muted mb-2">
+                    Created by <strong>Frederik Wouters</strong> as a personal study tool to learn Belgian military ranks (graden).
+                </p>
+                <p class="text-muted mb-2">
+                    <strong>Disclaimer:</strong> This is not an official Belgian Defence tool.
+                </p>
+                <p class="text-muted mb-2">
+                    <strong>Data Source:</strong> All rank insignia and information are sourced from
+                    <a href="https://nl.wikipedia.org/wiki/Lijst_van_militaire_rangen_van_de_Belgische_strijdkrachten" target="_blank" rel="noopener noreferrer">Wikipedia</a>.
+                </p>
+                <p class="text-muted mb-0">
+                    <strong>Found an error?</strong> Please report it to
+                    <a href="mailto:woutersf@gmail.com" rel="nofollow">woutersf@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ranks-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
