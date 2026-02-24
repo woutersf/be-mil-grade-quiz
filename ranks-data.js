@@ -1,6 +1,6 @@
 // Belgian Military Ranks Data
 // Data source: Belgian Defence official ranks (Wikipedia Commons)
-// All three components: Land, Air, and Marine
+// Components: Land, Air, Marine, Medical + Function Signs
 
 const ranksData = {
   "land": [
@@ -77,5 +77,39 @@ const ranksData = {
     { "name": "Kwartiermeester", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/MarineOR3.png/120px-MarineOR3.png" },
     { "name": "1e Matroos", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/MarineOR2.png/120px-MarineOR2.png" },
     { "name": "Matroos", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/LandLuchtMarineOR1.png/120px-LandLuchtMarineOR1.png" }
+  ],
+  "medical": [
+    { "name": "Generaal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MedicOF9.png/120px-MedicOF9.png" },
+    { "name": "Luitenant-generaal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MedicOF8.png/120px-MedicOF8.png" },
+    { "name": "Generaal-majoor", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/MedicOF7.png/120px-MedicOF7.png" },
+    { "name": "Brigadegeneraal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MedicOF6.png/120px-MedicOF6.png" },
+    { "name": "Kolonel", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/MedicOF5.png/120px-MedicOF5.png" },
+    { "name": "Luitenant-kolonel", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/MedicOF4.png/120px-MedicOF4.png" },
+    { "name": "Majoor", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/MedicOF3b.png/120px-MedicOF3b.png" },
+    { "name": "Kapitein-commandant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MedicOF3a.png/120px-MedicOF3a.png" },
+    { "name": "Kapitein", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/MedicOF2.png/120px-MedicOF2.png" },
+    { "name": "Luitenant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/MedicOF1b.png/120px-MedicOF1b.png" },
+    { "name": "Onderluitenant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MedicOF1a.png/120px-MedicOF1a.png" },
+    { "name": "Adjudant-majoor", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/MedicOR9b.png/120px-MedicOR9b.png" },
+    { "name": "Adjudant-chef", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/MedicOR9a.png/120px-MedicOR9a.png" },
+    { "name": "Adjudant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MedicOR8.png/120px-MedicOR8.png" },
+    { "name": "1e Sergeant-majoor", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MedicOR7.png/120px-MedicOR7.png" },
+    { "name": "1e Sergeant-chef", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MedicOR6b.png/120px-MedicOR6b.png" },
+    { "name": "1e Sergeant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/MedicOR6a.png/120px-MedicOR6a.png" },
+    { "name": "Sergeant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/MedicOR5.png/120px-MedicOR5.png" },
+    { "name": "1e Korporaal-chef", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/MedicOR4b.png/120px-MedicOR4b.png" },
+    { "name": "Korporaal-chef", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/MedicOR4a.png/120px-MedicOR4a.png" },
+    { "name": "Korporaal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MedicOR3.png/120px-MedicOR3.png" },
+    { "name": "1e Soldaat", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/MedicOR2.png/120px-MedicOR2.png" },
+    { "name": "Soldaat", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/MedicOR1.png/120px-MedicOR1.png" }
+  ],
+  "function_signs": [
+    { "name": "Korpskorporaal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/SCR-20250715-suwe.png/120px-SCR-20250715-suwe.png" },
+    { "name": "Korpskorporaal", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/SCR-20250715-suce.png/120px-SCR-20250715-suce.png" },
+    { "name": "Eenheidsadjudant (CSM)", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/SCR-20250715-surm.png/120px-SCR-20250715-surm.png" },
+    { "name": "Eenheidsadjudant (CSM)", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/SCR-20250715-suio.png/120px-SCR-20250715-suio.png" },
+    { "name": "Korpsadjudant (RSM)", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/SCR-20250715-svwc.png/120px-SCR-20250715-svwc.png" },
+    { "name": "Korpsadjudant (RSM)", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/SCR-20250715-svbw.png/120px-SCR-20250715-svbw.png" },
+    { "name": "Defensieadjudant", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/SCR-20250715-tbho.png/120px-SCR-20250715-tbho.png" }
   ]
 };

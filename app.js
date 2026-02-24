@@ -14,8 +14,10 @@ function startQuiz(mode) {
     const landChecked = document.getElementById('land-component').checked;
     const airChecked = document.getElementById('air-component').checked;
     const marineChecked = document.getElementById('marine-component').checked;
+    const medicalChecked = document.getElementById('medical-component').checked;
+    const functionSignsChecked = document.getElementById('function-signs').checked;
 
-    if (!landChecked && !airChecked && !marineChecked) {
+    if (!landChecked && !airChecked && !marineChecked && !medicalChecked && !functionSignsChecked) {
         document.getElementById('selection-error').classList.remove('d-none');
         return;
     }
@@ -32,6 +34,12 @@ function startQuiz(mode) {
     }
     if (marineChecked) {
         availableRanks = availableRanks.concat(ranksData.marine.map(r => ({ ...r, component: 'Marine Component' })));
+    }
+    if (medicalChecked) {
+        availableRanks = availableRanks.concat(ranksData.medical.map(r => ({ ...r, component: 'Medische Component' })));
+    }
+    if (functionSignsChecked) {
+        availableRanks = availableRanks.concat(ranksData.function_signs.map(r => ({ ...r, component: 'Functieteken' })));
     }
 
     // Shuffle and select questions
@@ -52,6 +60,8 @@ function startQuiz(mode) {
     if (landChecked) currentQuiz.selectedComponents.push('land');
     if (airChecked) currentQuiz.selectedComponents.push('air');
     if (marineChecked) currentQuiz.selectedComponents.push('marine');
+    if (medicalChecked) currentQuiz.selectedComponents.push('medical');
+    if (functionSignsChecked) currentQuiz.selectedComponents.push('function_signs');
 
     // Show quiz screen
     document.getElementById('start-screen').classList.add('d-none');
